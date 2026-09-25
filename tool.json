@@ -1,0 +1,260 @@
+{
+  "tool": {
+    "id": "h2fpef",
+    "title": "Escore H₂FPEF",
+    "short": "Probabilidade de IC com fração de ejeção preservada",
+    "desc": "Calcule o escore H2FPEF para estimar a probabilidade de insuficiência cardíaca com fração de ejeção preservada (ICFEp) em pacientes com dispneia inexplicada.",
+    "lead": "Estima a probabilidade de ICFEp em pacientes com dispneia inexplicada e fração de ejeção preservada, a partir de dados clínicos e do ecocardiograma de repouso.",
+    "spec": [
+      "cardiologia",
+      "clinica-medica"
+    ],
+    "fields": [
+      [
+        "obesidade",
+        "<strong>H</strong>eavy: IMC &gt; 30 kg/m² (2)",
+        "chk",
+        {
+          "pts": 2
+        }
+      ],
+      [
+        "anti",
+        "<strong>H</strong>ypertensive: 2 ou mais anti-hipertensivos (1)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "fa",
+        "<strong>F</strong>ibrilação atrial paroxística ou persistente (3)",
+        "chk",
+        {
+          "pts": 3
+        }
+      ],
+      [
+        "hp",
+        "<strong>P</strong>ulmonar: PSAP &gt; 35 mmHg no eco (1)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "idade",
+        "<strong>E</strong>lder: idade &gt; 60 anos (1)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "ee",
+        "<strong>F</strong>illing: E/e' &gt; 9 no eco (1)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ]
+    ],
+    "score": {
+      "label": "H₂FPEF",
+      "unit": "de 9",
+      "bands": [
+        [
+          0,
+          "low",
+          "Baixa probabilidade de ICFEp (0 a 1)",
+          "Investigar causas não cardíacas da dispneia."
+        ],
+        [
+          2,
+          "mid",
+          "Probabilidade intermediária (2 a 5)",
+          "Complementar com ecocardiograma de esforço (diastólico) ou cateterismo com exercício; peptídeos natriuréticos ajudam."
+        ],
+        [
+          6,
+          "high",
+          "Alta probabilidade de ICFEp (6 a 9)",
+          "ICFEp provável: tratar e investigar etiologias específicas (amiloidose, cardiomiopatia hipertrófica)."
+        ]
+      ]
+    },
+    "formula": "<p>Obesidade (IMC &gt; 30) = 2 · ≥ 2 anti-hipertensivos = 1 · fibrilação atrial = 3 · PSAP &gt; 35 mmHg = 1 · idade &gt; 60 = 1 · E/e' &gt; 9 = 1. Total de 0 a 9.</p>",
+    "table": [
+      [
+        "Pontos",
+        "Probabilidade de ICFEp",
+        "Próximo passo"
+      ],
+      [
+        "0–1",
+        "Baixa",
+        "Buscar outras causas"
+      ],
+      [
+        "2–5",
+        "Intermediária",
+        "Teste diastólico de esforço ou invasivo"
+      ],
+      [
+        "6–9",
+        "Alta",
+        "ICFEp provável"
+      ]
+    ],
+    "table_note": "Na derivação (Reddy 2018), a chance de ICFEp dobrou a cada ponto (OR 1,98); área sob a curva de 0,84 (0,89 na validação).",
+    "tips": [
+      "Só se aplica a quem tem dispneia inexplicada e FE ≥ 50%: não use em quem já tem diagnóstico definido de IC ou valvopatia importante.",
+      "A fibrilação atrial vale 3 pontos porque sozinha já é fortemente associada à ICFEp.",
+      "A ESC 2021 propõe também o algoritmo HFA-PEFF; os dois são complementares e podem discordar.",
+      "O escore foi derivado em população com alta prevalência de ICFEp (64%): em cenários de baixa prevalência, o valor preditivo positivo cai."
+    ],
+    "sources": [
+      [
+        "Reddy YNV et al. A simple, evidence-based approach to help guide diagnosis of heart failure with preserved ejection fraction. Circulation, 2018.",
+        "https://doi.org/10.1161/CIRCULATIONAHA.118.034646"
+      ],
+      [
+        "McDonagh TA et al. 2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure. Eur Heart J, 2021.",
+        "https://doi.org/10.1093/eurheartj/ehab368"
+      ]
+    ],
+    "cases": [
+      [
+        "Nenhum item: 0, baixa",
+        [],
+        {
+          "score": 0,
+          "level": "low"
+        }
+      ],
+      [
+        "Idade &gt; 60 e E/e' &gt; 9: 2, intermediária (limite)",
+        {
+          "idade": true,
+          "ee": true
+        },
+        {
+          "score": 2,
+          "level": "mid"
+        }
+      ],
+      [
+        "Obeso, 2 anti-hipertensivos, idade &gt; 60 e E/e' &gt; 9: 5",
+        {
+          "obesidade": true,
+          "anti": true,
+          "idade": true,
+          "ee": true
+        },
+        {
+          "score": 5,
+          "level": "mid"
+        }
+      ],
+      [
+        "Obeso com FA e idade &gt; 60: 6, alta",
+        {
+          "obesidade": true,
+          "fa": true,
+          "idade": true
+        },
+        {
+          "score": 6,
+          "level": "high"
+        }
+      ]
+    ],
+    "batch": "torax-vascular",
+    "kind": "Escore",
+    "config": {
+      "unit": "de 9",
+      "label": "H₂FPEF",
+      "fields": [
+        [
+          "obesidade",
+          "chk",
+          2
+        ],
+        [
+          "anti",
+          "chk",
+          1
+        ],
+        [
+          "fa",
+          "chk",
+          3
+        ],
+        [
+          "hp",
+          "chk",
+          1
+        ],
+        [
+          "idade",
+          "chk",
+          1
+        ],
+        [
+          "ee",
+          "chk",
+          1
+        ]
+      ],
+      "bands": [
+        [
+          0,
+          "low",
+          "Baixa probabilidade de ICFEp (0 a 1)",
+          "Investigar causas não cardíacas da dispneia."
+        ],
+        [
+          2,
+          "mid",
+          "Probabilidade intermediária (2 a 5)",
+          "Complementar com ecocardiograma de esforço (diastólico) ou cateterismo com exercício; peptídeos natriuréticos ajudam."
+        ],
+        [
+          6,
+          "high",
+          "Alta probabilidade de ICFEp (6 a 9)",
+          "ICFEp provável: tratar e investigar etiologias específicas (amiloidose, cardiomiopatia hipertrófica)."
+        ]
+      ]
+    },
+    "areaId": "cardiotoracica",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/torax-vascular.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/torax-vascular.php",
+    "sha256": "e99bbd1938580ff9b46e0252fdd8cb72e87c63869f934005b8ef6d807ce8b6e2",
+    "bytes": 91275
+  },
+  "clinicalValidation": "not-performed"
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "label": "Nenhum item: 0, baixa",
+    "input": {},
+    "expected": {
+      "score": 0,
+      "level": "low"
+    },
+    "originalInput": [],
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Idade &gt; 60 e E/e' &gt; 9: 2, intermediária (limite)",
+    "input": {
+      "idade": true,
+      "ee": true
+    },
+    "expected": {
+      "score": 2,
+      "level": "mid"
+    },
+    "originalInput": {
+      "idade": true,
+      "ee": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Obeso, 2 anti-hipertensivos, idade &gt; 60 e E/e' &gt; 9: 5",
+    "input": {
+      "obesidade": true,
+      "anti": true,
+      "idade": true,
+      "ee": true
+    },
+    "expected": {
+      "score": 5,
+      "level": "mid"
+    },
+    "originalInput": {
+      "obesidade": true,
+      "anti": true,
+      "idade": true,
+      "ee": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Obeso com FA e idade &gt; 60: 6, alta",
+    "input": {
+      "obesidade": true,
+      "fa": true,
+      "idade": true
+    },
+    "expected": {
+      "score": 6,
+      "level": "high"
+    },
+    "originalInput": {
+      "obesidade": true,
+      "fa": true,
+      "idade": true
+    },
+    "expandedZeroOptions": []
+  }
+]
