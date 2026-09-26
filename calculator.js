@@ -1,11 +1,11 @@
-/* tool-h2fpef · Elucenia · https://github.com/Elucenia/tool-h2fpef
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-h2fpef · ELUCENIA · https://github.com/Elucenia/tool-h2fpef
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"h2fpef","title":"Escore H₂FPEF","fields":[["obesidade","<strong>H</strong>eavy: IMC &gt; 30 kg/m² (2)","chk",{"pts":2}],["anti","<strong>H</strong>ypertensive: 2 ou mais anti-hipertensivos (1)","chk",{"pts":1}],["fa","<strong>F</strong>ibrilação atrial paroxística ou persistente (3)","chk",{"pts":3}],["hp","<strong>P</strong>ulmonar: PSAP &gt; 35 mmHg no eco (1)","chk",{"pts":1}],["idade","<strong>E</strong>lder: idade &gt; 60 anos (1)","chk",{"pts":1}],["ee","<strong>F</strong>illing: E/e' &gt; 9 no eco (1)","chk",{"pts":1}]],"config":{"unit":"de 9","label":"H₂FPEF","fields":[["obesidade","chk",2],["anti","chk",1],["fa","chk",3],["hp","chk",1],["idade","chk",1],["ee","chk",1]],"bands":[[0,"low","Baixa probabilidade de ICFEp (0 a 1)","Investigar causas não cardíacas da dispneia."],[2,"mid","Probabilidade intermediária (2 a 5)","Complementar com ecocardiograma de esforço (diastólico) ou cateterismo com exercício; peptídeos natriuréticos ajudam."],[6,"high","Alta probabilidade de ICFEp (6 a 9)","ICFEp provável: tratar e investigar etiologias específicas (amiloidose, cardiomiopatia hipertrófica)."]]},"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
