@@ -5,6 +5,7 @@
     "short": "Probabilidade de IC com fração de ejeção preservada",
     "desc": "Calcule o escore H2FPEF para estimar a probabilidade de insuficiência cardíaca com fração de ejeção preservada (ICFEp) em pacientes com dispneia inexplicada.",
     "lead": "Estima a probabilidade de ICFEp em pacientes com dispneia inexplicada e fração de ejeção preservada, a partir de dados clínicos e do ecocardiograma de repouso.",
+    "kind": "Escore",
     "spec": [
       "cardiologia",
       "clinica-medica"
@@ -14,105 +15,40 @@
         "obesidade",
         "<strong>H</strong>eavy: IMC &gt; 30 kg/m² (2)",
         "chk",
-        {
-          "pts": 2
-        }
+        {}
       ],
       [
         "anti",
         "<strong>H</strong>ypertensive: 2 ou mais anti-hipertensivos (1)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "fa",
         "<strong>F</strong>ibrilação atrial paroxística ou persistente (3)",
         "chk",
-        {
-          "pts": 3
-        }
+        {}
       ],
       [
         "hp",
         "<strong>P</strong>ulmonar: PSAP &gt; 35 mmHg no eco (1)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "idade",
         "<strong>E</strong>lder: idade &gt; 60 anos (1)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "ee",
         "<strong>F</strong>illing: E/e' &gt; 9 no eco (1)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ]
     ],
-    "score": {
-      "label": "H₂FPEF",
-      "unit": "de 9",
-      "bands": [
-        [
-          0,
-          "low",
-          "Baixa probabilidade de ICFEp (0 a 1)",
-          "Investigar causas não cardíacas da dispneia."
-        ],
-        [
-          2,
-          "mid",
-          "Probabilidade intermediária (2 a 5)",
-          "Complementar com ecocardiograma de esforço (diastólico) ou cateterismo com exercício; peptídeos natriuréticos ajudam."
-        ],
-        [
-          6,
-          "high",
-          "Alta probabilidade de ICFEp (6 a 9)",
-          "ICFEp provável: tratar e investigar etiologias específicas (amiloidose, cardiomiopatia hipertrófica)."
-        ]
-      ]
-    },
     "formula": "<p>Obesidade (IMC &gt; 30) = 2 · ≥ 2 anti-hipertensivos = 1 · fibrilação atrial = 3 · PSAP &gt; 35 mmHg = 1 · idade &gt; 60 = 1 · E/e' &gt; 9 = 1. Total de 0 a 9.</p>",
-    "table": [
-      [
-        "Pontos",
-        "Probabilidade de ICFEp",
-        "Próximo passo"
-      ],
-      [
-        "0–1",
-        "Baixa",
-        "Buscar outras causas"
-      ],
-      [
-        "2–5",
-        "Intermediária",
-        "Teste diastólico de esforço ou invasivo"
-      ],
-      [
-        "6–9",
-        "Alta",
-        "ICFEp provável"
-      ]
-    ],
-    "table_note": "Na derivação (Reddy 2018), a chance de ICFEp dobrou a cada ponto (OR 1,98); área sob a curva de 0,84 (0,89 na validação).",
-    "tips": [
-      "Só se aplica a quem tem dispneia inexplicada e FE ≥ 50%: não use em quem já tem diagnóstico definido de IC ou valvopatia importante.",
-      "A fibrilação atrial vale 3 pontos porque sozinha já é fortemente associada à ICFEp.",
-      "A ESC 2021 propõe também o algoritmo HFA-PEFF; os dois são complementares e podem discordar.",
-      "O escore foi derivado em população com alta prevalência de ICFEp (64%): em cenários de baixa prevalência, o valor preditivo positivo cai."
-    ],
     "sources": [
       [
         "Reddy YNV et al. A simple, evidence-based approach to help guide diagnosis of heart failure with preserved ejection fraction. Circulation, 2018.",
@@ -169,64 +105,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "de 9",
-      "label": "H₂FPEF",
-      "fields": [
-        [
-          "obesidade",
-          "chk",
-          2
-        ],
-        [
-          "anti",
-          "chk",
-          1
-        ],
-        [
-          "fa",
-          "chk",
-          3
-        ],
-        [
-          "hp",
-          "chk",
-          1
-        ],
-        [
-          "idade",
-          "chk",
-          1
-        ],
-        [
-          "ee",
-          "chk",
-          1
-        ]
-      ],
-      "bands": [
-        [
-          0,
-          "low",
-          "Baixa probabilidade de ICFEp (0 a 1)",
-          "Investigar causas não cardíacas da dispneia."
-        ],
-        [
-          2,
-          "mid",
-          "Probabilidade intermediária (2 a 5)",
-          "Complementar com ecocardiograma de esforço (diastólico) ou cateterismo com exercício; peptídeos natriuréticos ajudam."
-        ],
-        [
-          6,
-          "high",
-          "Alta probabilidade de ICFEp (6 a 9)",
-          "ICFEp provável: tratar e investigar etiologias específicas (amiloidose, cardiomiopatia hipertrófica)."
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -235,17 +113,452 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T19:08:23.446Z",
+      "total": 64,
+      "passed": 64,
+      "sourceRowCount": 64,
+      "uniqueApiInputCount": 64,
+      "sourceContextCount": 64,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "26719121153ee903e52995b20f3fc8e82e0855ceb89f58eeaa183bd131214578",
+        "total": 64,
+        "bankRowCount": 64,
+        "uniqueApiInputCount": 64,
+        "sourceContextCount": 64,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/three-score-independent-expectations-final27.json",
+            "sha256": "1c2108614e5d083041b973237d618eae17a8603944b8608881db822295bd04a8"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/three-score-source-comparison-final27.json",
+          "sha256": "8db7177dbaec837508880ed9b1a8c855f25afebcb014ff3e5da971ef5f004517"
+        },
+        "packagingRequirement": "After source27 composition, rebind exact calculator SHA for documented text-only edits and replay the full scope before fresh packaging."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "sourceRows": 64,
+        "uniqueApiInputs": 64,
+        "duplicateRows": 0,
+        "expectationAudit": {
+          "file": "reports/review-20261003/three-score-independent-expectations-final27.json",
+          "sha256": "1c2108614e5d083041b973237d618eae17a8603944b8608881db822295bd04a8"
+        }
+      },
+      "scope": "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings.",
+      "sources": [
+        {
+          "id": "h2fpef",
+          "declaredEdition": "H 2 FPEF/Reddy 2018:6 fatores,0–9; 2 IMC/3 FA",
+          "readRecords": [
+            {
+              "id": "h2fpef",
+              "edition": "Reddy2018 Circulation138:861–870, Figure1 printedp867",
+              "url": "https://doi.org/10.1161/CIRCULATIONAHA.118.034646",
+              "retrievalURL": "https://saigaiin.sakura.ne.jp/sblo_files/saigaiin/image/circulationE38288E3828A.pdf",
+              "file": "h2fpef-reddy-2018-original-mirror-final27.pdf",
+              "readPages": [
+                7
+              ],
+              "observations": "Six source-defined booleans contribute weights2,1,3,1,1,1. They correspond to BMI>30, at least2 antihypertensives, paroxysmal/persistent AF, echoPASP>35, age>60 and echoE/e′>9. The source population concerns unexplained dyspnea referred for invasive exercise testing.",
+              "unchecked": [
+                "The UI accepts source predicates, not continuous measurements; numeric measurement thresholds are not independently exercised by this bank.",
+                "Probability nomogram, diagnosis and treatment are outside the bank.",
+                "Publisher PDF returned403; the matching original article scan was read from the recorded mirror."
+              ],
+              "sha256": "67adf051a6044881b39cfb407609d99b4757cb1b1ffb045acba0e31b38810e3b",
+              "visualEvidence": [
+                {
+                  "file": "h2fpef-reddy-2018-original-mirror-final27-p7.png",
+                  "sha256": "ed3a09dd7ab79b2dcc465b4450b88bbeb60ad12b316361e8a22c91a7cc4e808d"
+                }
+              ],
+              "clinicalApproval": "not-performed",
+              "professionalLanguageApproval": "not-performed",
+              "sourceRightsApproval": "not-performed"
+            }
+          ],
+          "sourceReview": {
+            "file": "reports/review-20261003/three-score-primary-review-final27.json",
+            "sha256": "21364c8a477ff72e3a51bf662879a238fd28d90d2f24115065f9cf5224951068"
+          },
+          "sourceComponent": "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings."
+        }
+      ],
+      "evidencePath": "reports/review-20261003/three-score-source-comparison-final27.json",
+      "evidenceSha256": "8db7177dbaec837508880ed9b1a8c855f25afebcb014ff3e5da971ef5f004517",
+      "independentPeer": {
+        "status": "passed",
+        "scope": "Independent reading of named source sections and own expectation derivation/execution. Bank/metadata packaging needs a separate technical peer. No human clinical, translation or rights approval.",
+        "peer": {
+          "file": "reports/review-20261003/three-score-source-independent-review-western-final27-r2.json",
+          "sha256": "b4f511b270e60afd7d8375a5480403bad36d2e7c7043254505e6bef99c2f2809"
+        },
+        "peerScope": "Independent source-section peer and own assigned-point integer expectations, frozen before imports; three current adapters Node and same-source browser-compatible VM. This is a bounded sum check and does not approve the whole clinical instrument, rubric, population expansion, diagnosis, discharge, rights or professional translation.",
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "metadataPackagingPeer": {
+        "status": "passed",
+        "scope": "Bounded independent review of the original source bank and its metadata/helper. Prospective code rebinding is separately re-executed below and requires the final composition peer; no human approval inferred.",
+        "peer": {
+          "file": "reports/review-20261003/nine-source-bank-metadata-independent-review-western-final27.json",
+          "sha256": "e762e0f425c9251081547c86e4f1b80b86839a21223fd47712ebde9b1335a978"
+        },
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "actualAdapterExecutions": 192,
+      "actualVmExecutions": 192,
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/h2fpef/calculator.js",
+          "sha256": "4a9c785e22a8242daa5713ac87b441ff956644033e93a1818f29524ef3d69a91"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/h2fpef/calculator.js",
+          "sha256": "4a9c785e22a8242daa5713ac87b441ff956644033e93a1818f29524ef3d69a91"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/h2fpef/calculator.js",
+          "sha256": "4a9c785e22a8242daa5713ac87b441ff956644033e93a1818f29524ef3d69a91"
+        }
+      ],
+      "qualifications": [
+        "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings.",
+        "Original source conflicts, rights conditions, population and clinical limitations remain in the hashed primary review and peer. They are not marked approved.",
+        "Four inline records are a subset of the complete hashed downloadable bank. Every862historicalfixture and method field/formula/version is unchanged by this evidence-only candidate."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "prospectiveSource27Bindings": [
+        {
+          "file": "apps/website/private/tool-code/h2fpef/calculator.js",
+          "sha256": "4a9c785e22a8242daa5713ac87b441ff956644033e93a1818f29524ef3d69a91"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/h2fpef/calculator.js",
+          "sha256": "4a9c785e22a8242daa5713ac87b441ff956644033e93a1818f29524ef3d69a91"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/h2fpef/calculator.js",
+          "sha256": "4a9c785e22a8242daa5713ac87b441ff956644033e93a1818f29524ef3d69a91"
+        }
+      ],
+      "prospectiveSource27Replay": {
+        "file": "reports/review-20261003/source27-complete-bank-current-replay-root-r3.json",
+        "sha256": "44c601f27d3d5051a8d55a581381112b58df36c7c4b6cfd24ce1249b263d6a2b"
+      },
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "H 2 FPEF/Reddy 2018:6 fatores,0–9; 2 IMC/3 FA",
+    "implementationVersion": "h2fpef@native-2026-10-03+4a9c785e22a8",
+    "currentMethodSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6202181/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Obesidade (IMC > 30) = 2 · ≥ 2 anti-hipertensivos = 1 · fibrilação atrial = 3 · PSAP > 35 mmHg = 1 · idade > 60 = 1 · E/e' > 9 = 1. Total de 0 a 9.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "obesidade",
+            "label": "<strong>H</strong>eavy: IMC &gt; 30 kg/m² (2)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "anti",
+            "label": "<strong>H</strong>ypertensive: 2 ou mais anti-hipertensivos (1)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "fa",
+            "label": "<strong>F</strong>ibrilação atrial paroxística ou persistente (3)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "hp",
+            "label": "<strong>P</strong>ulmonar: PSAP &gt; 35 mmHg no eco (1)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "idade",
+            "label": "<strong>E</strong>lder: idade &gt; 60 anos (1)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "ee",
+            "label": "<strong>F</strong>illing: E/e' &gt; 9 no eco (1)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "a8598fba79e92cbac3528a2c4f955239035d0a7b81a373e1b33b99d92fe6704e"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Reddy YNV et al. A simple, evidence-based approach to help guide diagnosis of heart failure with preserved ejection fraction. Circulation, 2018.",
+          "url": "https://doi.org/10.1161/CIRCULATIONAHA.118.034646",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "A Simple, Evidence-Based Approach to Help Guide Diagnosis of Heart Failure With Preserved Ejection Fraction.",
+            "year": "2018",
+            "firstPublicationDate": "2018-08-01",
+            "doi": "10.1161/circulationaha.118.034646",
+            "pmid": "29792299",
+            "pmcid": "PMC6202181",
+            "journal": "Circulation",
+            "authors": "Reddy YNV, Carter RE, Obokata M, Redfield MM, Borlaug BA."
+          },
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6202181/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "0d13ef6fadf25162843cbd026b9267f20a0cda82096fc573b0445fd84d68e81b",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "McDonagh TA et al. 2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure. Eur Heart J, 2021.",
+          "url": "https://doi.org/10.1093/eurheartj/ehab368",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure.",
+            "year": "2021",
+            "firstPublicationDate": "2021-09-01",
+            "doi": "10.1093/eurheartj/ehab368",
+            "pmid": "34447992",
+            "journal": "European heart journal",
+            "authors": "McDonagh TA, Metra M, Adamo M, Gardner RS, Baumbach A, Böhm M, Burri H, Butler J, Čelutkienė J, Chioncel O, Cleland JGF, Coats AJS, Crespo-Leiro MG, Farmakis D, Gilard M, Heymans S, Hoes AW, Jaarsma T, Jankowska EA, Lainscak M, Lam CSP, Lyon AR, McMurray JJV, Mebazaa A, Mindham R, Muneretto C, Francesco Piepoli M, Price S, Rosano GMC, Ruschitzka F, Kathrine Skibelund A, ESC Scientific Document Group."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/34447992/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T19:08:23.446Z",
+        "total": 64,
+        "passed": 64,
+        "sourceRowCount": 64,
+        "uniqueApiInputCount": 64,
+        "sourceContextCount": 64,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "26719121153ee903e52995b20f3fc8e82e0855ceb89f58eeaa183bd131214578",
+          "total": 64,
+          "bankRowCount": 64,
+          "uniqueApiInputCount": 64,
+          "sourceContextCount": 64,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/three-score-independent-expectations-final27.json",
+              "sha256": "1c2108614e5d083041b973237d618eae17a8603944b8608881db822295bd04a8"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/three-score-source-comparison-final27.json",
+            "sha256": "8db7177dbaec837508880ed9b1a8c855f25afebcb014ff3e5da971ef5f004517"
+          },
+          "packagingRequirement": "After source27 composition, rebind exact calculator SHA for documented text-only edits and replay the full scope before fresh packaging."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "sourceRows": 64,
+          "uniqueApiInputs": 64,
+          "duplicateRows": 0,
+          "expectationAudit": {
+            "file": "reports/review-20261003/three-score-independent-expectations-final27.json",
+            "sha256": "1c2108614e5d083041b973237d618eae17a8603944b8608881db822295bd04a8"
+          }
+        },
+        "scope": "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings.",
+        "sources": [
+          {
+            "id": "h2fpef",
+            "declaredEdition": "H 2 FPEF/Reddy 2018:6 fatores,0–9; 2 IMC/3 FA",
+            "readRecords": [
+              {
+                "id": "h2fpef",
+                "edition": "Reddy2018 Circulation138:861–870, Figure1 printedp867",
+                "url": "https://doi.org/10.1161/CIRCULATIONAHA.118.034646",
+                "retrievalURL": "https://saigaiin.sakura.ne.jp/sblo_files/saigaiin/image/circulationE38288E3828A.pdf",
+                "file": "h2fpef-reddy-2018-original-mirror-final27.pdf",
+                "readPages": [
+                  7
+                ],
+                "observations": "Six source-defined booleans contribute weights2,1,3,1,1,1. They correspond to BMI>30, at least2 antihypertensives, paroxysmal/persistent AF, echoPASP>35, age>60 and echoE/e′>9. The source population concerns unexplained dyspnea referred for invasive exercise testing.",
+                "unchecked": [
+                  "The UI accepts source predicates, not continuous measurements; numeric measurement thresholds are not independently exercised by this bank.",
+                  "Probability nomogram, diagnosis and treatment are outside the bank.",
+                  "Publisher PDF returned403; the matching original article scan was read from the recorded mirror."
+                ],
+                "sha256": "67adf051a6044881b39cfb407609d99b4757cb1b1ffb045acba0e31b38810e3b",
+                "visualEvidence": [
+                  {
+                    "file": "h2fpef-reddy-2018-original-mirror-final27-p7.png",
+                    "sha256": "ed3a09dd7ab79b2dcc465b4450b88bbeb60ad12b316361e8a22c91a7cc4e808d"
+                  }
+                ],
+                "clinicalApproval": "not-performed",
+                "professionalLanguageApproval": "not-performed",
+                "sourceRightsApproval": "not-performed"
+              }
+            ],
+            "sourceReview": {
+              "file": "reports/review-20261003/three-score-primary-review-final27.json",
+              "sha256": "21364c8a477ff72e3a51bf662879a238fd28d90d2f24115065f9cf5224951068"
+            },
+            "sourceComponent": "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings."
+          }
+        ],
+        "evidencePath": "reports/review-20261003/three-score-source-comparison-final27.json",
+        "evidenceSha256": "8db7177dbaec837508880ed9b1a8c855f25afebcb014ff3e5da971ef5f004517",
+        "independentPeer": {
+          "status": "passed",
+          "scope": "Independent reading of named source sections and own expectation derivation/execution. Bank/metadata packaging needs a separate technical peer. No human clinical, translation or rights approval.",
+          "peer": {
+            "file": "reports/review-20261003/three-score-source-independent-review-western-final27-r2.json",
+            "sha256": "b4f511b270e60afd7d8375a5480403bad36d2e7c7043254505e6bef99c2f2809"
+          },
+          "peerScope": "Independent source-section peer and own assigned-point integer expectations, frozen before imports; three current adapters Node and same-source browser-compatible VM. This is a bounded sum check and does not approve the whole clinical instrument, rubric, population expansion, diagnosis, discharge, rights or professional translation.",
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "metadataPackagingPeer": {
+          "status": "passed",
+          "scope": "Bounded independent review of the original source bank and its metadata/helper. Prospective code rebinding is separately re-executed below and requires the final composition peer; no human approval inferred.",
+          "peer": {
+            "file": "reports/review-20261003/nine-source-bank-metadata-independent-review-western-final27.json",
+            "sha256": "e762e0f425c9251081547c86e4f1b80b86839a21223fd47712ebde9b1335a978"
+          },
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "actualAdapterExecutions": 192,
+        "actualVmExecutions": 192,
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/h2fpef/calculator.js",
+            "sha256": "4a9c785e22a8242daa5713ac87b441ff956644033e93a1818f29524ef3d69a91"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/h2fpef/calculator.js",
+            "sha256": "4a9c785e22a8242daa5713ac87b441ff956644033e93a1818f29524ef3d69a91"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/h2fpef/calculator.js",
+            "sha256": "4a9c785e22a8242daa5713ac87b441ff956644033e93a1818f29524ef3d69a91"
+          }
+        ],
+        "qualifications": [
+          "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings.",
+          "Original source conflicts, rights conditions, population and clinical limitations remain in the hashed primary review and peer. They are not marked approved.",
+          "Four inline records are a subset of the complete hashed downloadable bank. Every862historicalfixture and method field/formula/version is unchanged by this evidence-only candidate."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "prospectiveSource27Bindings": [
+          {
+            "file": "apps/website/private/tool-code/h2fpef/calculator.js",
+            "sha256": "4a9c785e22a8242daa5713ac87b441ff956644033e93a1818f29524ef3d69a91"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/h2fpef/calculator.js",
+            "sha256": "4a9c785e22a8242daa5713ac87b441ff956644033e93a1818f29524ef3d69a91"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/h2fpef/calculator.js",
+            "sha256": "4a9c785e22a8242daa5713ac87b441ff956644033e93a1818f29524ef3d69a91"
+          }
+        ],
+        "prospectiveSource27Replay": {
+          "file": "reports/review-20261003/source27-complete-bank-current-replay-root-r3.json",
+          "sha256": "44c601f27d3d5051a8d55a581381112b58df36c7c4b6cfd24ce1249b263d6a2b"
+        },
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "4a9c785e22a8242daa5713ac87b441ff956644033e93a1818f29524ef3d69a91"
+    },
+    "limits": "O H2FPEF foi desenvolvido em pessoas com dispneia inexplicada encaminhadas para avaliação hemodinâmica invasiva de esforço, comparando ICFEp e causas não cardíacas. O escore auxilia a decidir investigação adicional; não confirma sozinho ICFEp nem deve ser extrapolado automaticamente a toda causa de dispneia. População, fração de ejeção e definições ecocardiográficas precisam corresponder ao método.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.935Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Não se verifica diagnóstico em qualquer dispneia, população geral/pediatria ou exclusões completas. Probabilidade depende da população encaminhada, com prevalência alta no estudo."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/h2fpef/calculator.js",
+    "bytes": 5109,
+    "sha256": "4a9c785e22a8242daa5713ac87b441ff956644033e93a1818f29524ef3d69a91"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "5baf0b0f948c5564545b9ace2aa2357c402db178289f2e43303d358c8219daa9",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "29e9406d9648c87b95d7ec987639b35b252f884a412165581c5e8acfb5ee09d9",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "29e9406d9648c87b95d7ec987639b35b252f884a412165581c5e8acfb5ee09d9",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

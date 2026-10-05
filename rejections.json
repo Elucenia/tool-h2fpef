@@ -1,0 +1,134 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean obesidade",
+    "input": {
+      "obesidade": "2",
+      "anti": false,
+      "fa": false,
+      "hp": false,
+      "idade": false,
+      "ee": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "obesidade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean anti",
+    "input": {
+      "obesidade": false,
+      "anti": "2",
+      "fa": false,
+      "hp": false,
+      "idade": false,
+      "ee": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "anti"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean fa",
+    "input": {
+      "obesidade": false,
+      "anti": false,
+      "fa": "2",
+      "hp": false,
+      "idade": false,
+      "ee": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fa"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean hp",
+    "input": {
+      "obesidade": false,
+      "anti": false,
+      "fa": false,
+      "hp": "2",
+      "idade": false,
+      "ee": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "hp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean idade",
+    "input": {
+      "obesidade": false,
+      "anti": false,
+      "fa": false,
+      "hp": false,
+      "idade": "2",
+      "ee": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean ee",
+    "input": {
+      "obesidade": false,
+      "anti": false,
+      "fa": false,
+      "hp": false,
+      "idade": false,
+      "ee": "2"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ee"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]
