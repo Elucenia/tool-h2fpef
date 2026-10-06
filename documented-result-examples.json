@@ -1,0 +1,707 @@
+{
+  "id": "h2fpef",
+  "implementationVersion": "h2fpef@native-2026-10-05+79f930850636",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Nenhum item: 0, baixa",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Baixa probabilidade de ICFEp (0 a 1)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Investigar causas não cardíacas da dispneia.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Idade &gt; 60 e E/e' &gt; 9: 2, intermediária (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probabilidade intermediária (2 a 5)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Complementar com ecocardiograma de esforço (diastólico) ou cateterismo com exercício; peptídeos natriuréticos ajudam.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Obeso, 2 anti-hipertensivos, idade &gt; 60 e E/e' &gt; 9: 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probabilidade intermediária (2 a 5)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Complementar com ecocardiograma de esforço (diastólico) ou cateterismo com exercício; peptídeos natriuréticos ajudam.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Obeso com FA e idade &gt; 60: 6, alta",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Alta probabilidade de ICFEp (6 a 9)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "ICFEp provável: tratar e investigar etiologias específicas (amiloidose, cardiomiopatia hipertrófica).",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Nenhum item: 0, baixa",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Low probability of HFpEF (0 to 1)",
+            "locale": "en",
+            "template": "documented-authored-408933f237e02f8b5c64"
+          },
+          "note": {
+            "text": "Investigate non-cardiac causes of dyspnea.",
+            "locale": "en",
+            "template": "documented-authored-98758c37546bd0a7ddc8"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Idade &gt; 60 e E/e' &gt; 9: 2, intermediária (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Intermediate probability (2 to 5)",
+            "locale": "en",
+            "template": "documented-authored-1eeea0f428b964e1d89e"
+          },
+          "note": {
+            "text": "Complement with stress echocardiography (diastolic) or exercise catheterization; natriuretic peptides help.",
+            "locale": "en",
+            "template": "documented-authored-cce35e34820d1883f493"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Obeso, 2 anti-hipertensivos, idade &gt; 60 e E/e' &gt; 9: 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Intermediate probability (2 to 5)",
+            "locale": "en",
+            "template": "documented-authored-1eeea0f428b964e1d89e"
+          },
+          "note": {
+            "text": "Complement with stress echocardiography (diastolic) or exercise catheterization; natriuretic peptides help.",
+            "locale": "en",
+            "template": "documented-authored-cce35e34820d1883f493"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Obeso com FA e idade &gt; 60: 6, alta",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "High probability of HFpEF (6 to 9)",
+            "locale": "en",
+            "template": "documented-authored-6b2c86dc39908468d405"
+          },
+          "note": {
+            "text": "HFpEF likely: treat and investigate specific etiologies (amyloidosis, hypertrophic cardiomyopathy).",
+            "locale": "en",
+            "template": "documented-authored-cdc733254d6604bd2c92"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Nenhum item: 0, baixa",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Baja probabilidad de ICFEp (0 a 1)",
+            "locale": "es",
+            "template": "documented-authored-408933f237e02f8b5c64"
+          },
+          "note": {
+            "text": "Investigar causas no cardíacas de la disnea.",
+            "locale": "es",
+            "template": "documented-authored-98758c37546bd0a7ddc8"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Idade &gt; 60 e E/e' &gt; 9: 2, intermediária (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probabilidad intermedia (2 a 5)",
+            "locale": "es",
+            "template": "documented-authored-1eeea0f428b964e1d89e"
+          },
+          "note": {
+            "text": "Complementar con ecocardiograma de esfuerzo (diastólico) o cateterismo con ejercicio; los péptidos natriuréticos ayudan.",
+            "locale": "es",
+            "template": "documented-authored-cce35e34820d1883f493"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Obeso, 2 anti-hipertensivos, idade &gt; 60 e E/e' &gt; 9: 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probabilidad intermedia (2 a 5)",
+            "locale": "es",
+            "template": "documented-authored-1eeea0f428b964e1d89e"
+          },
+          "note": {
+            "text": "Complementar con ecocardiograma de esfuerzo (diastólico) o cateterismo con ejercicio; los péptidos natriuréticos ayudan.",
+            "locale": "es",
+            "template": "documented-authored-cce35e34820d1883f493"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Obeso com FA e idade &gt; 60: 6, alta",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Alta probabilidad de ICFEp (6 a 9)",
+            "locale": "es",
+            "template": "documented-authored-6b2c86dc39908468d405"
+          },
+          "note": {
+            "text": "ICFEp probable: tratar e investigar etiologías específicas (amiloidosis, miocardiopatía hipertrófica).",
+            "locale": "es",
+            "template": "documented-authored-cdc733254d6604bd2c92"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Nenhum item: 0, baixa",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Faible probabilité d'ICFEp (0 à 1)",
+            "locale": "fr",
+            "template": "documented-authored-408933f237e02f8b5c64"
+          },
+          "note": {
+            "text": "Rechercher des causes non cardiaques de la dyspnée.",
+            "locale": "fr",
+            "template": "documented-authored-98758c37546bd0a7ddc8"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Idade &gt; 60 e E/e' &gt; 9: 2, intermediária (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probabilité intermédiaire (2 à 5)",
+            "locale": "fr",
+            "template": "documented-authored-1eeea0f428b964e1d89e"
+          },
+          "note": {
+            "text": "Compléter par une échocardiographie d'effort (diastolique) ou un cathétérisme à l'exercice ; les peptides natriurétiques aident.",
+            "locale": "fr",
+            "template": "documented-authored-cce35e34820d1883f493"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Obeso, 2 anti-hipertensivos, idade &gt; 60 e E/e' &gt; 9: 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probabilité intermédiaire (2 à 5)",
+            "locale": "fr",
+            "template": "documented-authored-1eeea0f428b964e1d89e"
+          },
+          "note": {
+            "text": "Compléter par une échocardiographie d'effort (diastolique) ou un cathétérisme à l'exercice ; les peptides natriurétiques aident.",
+            "locale": "fr",
+            "template": "documented-authored-cce35e34820d1883f493"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Obeso com FA e idade &gt; 60: 6, alta",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Forte probabilité d'ICFEp (6 à 9)",
+            "locale": "fr",
+            "template": "documented-authored-6b2c86dc39908468d405"
+          },
+          "note": {
+            "text": "ICFEp probable : traiter et rechercher des étiologies spécifiques (amylose, cardiomyopathie hypertrophique).",
+            "locale": "fr",
+            "template": "documented-authored-cdc733254d6604bd2c92"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Nenhum item: 0, baixa",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Niedrige Wahrscheinlichkeit für HFpEF (0 bis 1)",
+            "locale": "de",
+            "template": "documented-authored-408933f237e02f8b5c64"
+          },
+          "note": {
+            "text": "Nicht-kardiale Ursachen der Dyspnoe abklären.",
+            "locale": "de",
+            "template": "documented-authored-98758c37546bd0a7ddc8"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Idade &gt; 60 e E/e' &gt; 9: 2, intermediária (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Mittlere Wahrscheinlichkeit (2 bis 5)",
+            "locale": "de",
+            "template": "documented-authored-1eeea0f428b964e1d89e"
+          },
+          "note": {
+            "text": "Ergänzend Belastungs-Echokardiographie (diastolisch) oder Belastungskatheteruntersuchung; natriuretische Peptide helfen.",
+            "locale": "de",
+            "template": "documented-authored-cce35e34820d1883f493"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Obeso, 2 anti-hipertensivos, idade &gt; 60 e E/e' &gt; 9: 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Mittlere Wahrscheinlichkeit (2 bis 5)",
+            "locale": "de",
+            "template": "documented-authored-1eeea0f428b964e1d89e"
+          },
+          "note": {
+            "text": "Ergänzend Belastungs-Echokardiographie (diastolisch) oder Belastungskatheteruntersuchung; natriuretische Peptide helfen.",
+            "locale": "de",
+            "template": "documented-authored-cce35e34820d1883f493"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Obeso com FA e idade &gt; 60: 6, alta",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Hohe Wahrscheinlichkeit für HFpEF (6 bis 9)",
+            "locale": "de",
+            "template": "documented-authored-6b2c86dc39908468d405"
+          },
+          "note": {
+            "text": "HFpEF wahrscheinlich: behandeln und spezifische Ätiologien abklären (Amyloidose, hypertrophe Kardiomyopathie).",
+            "locale": "de",
+            "template": "documented-authored-cdc733254d6604bd2c92"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Nenhum item: 0, baixa",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Bassa probabilità di HFpEF (0 a 1)",
+            "locale": "it",
+            "template": "documented-authored-408933f237e02f8b5c64"
+          },
+          "note": {
+            "text": "Indagare cause non cardiache della dispnea.",
+            "locale": "it",
+            "template": "documented-authored-98758c37546bd0a7ddc8"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Idade &gt; 60 e E/e' &gt; 9: 2, intermediária (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probabilità intermedia (2 a 5)",
+            "locale": "it",
+            "template": "documented-authored-1eeea0f428b964e1d89e"
+          },
+          "note": {
+            "text": "Completare con ecocardiogramma da sforzo (diastolico) o cateterismo con esercizio; i peptidi natriuretici aiutano.",
+            "locale": "it",
+            "template": "documented-authored-cce35e34820d1883f493"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Obeso, 2 anti-hipertensivos, idade &gt; 60 e E/e' &gt; 9: 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probabilità intermedia (2 a 5)",
+            "locale": "it",
+            "template": "documented-authored-1eeea0f428b964e1d89e"
+          },
+          "note": {
+            "text": "Completare con ecocardiogramma da sforzo (diastolico) o cateterismo con esercizio; i peptidi natriuretici aiutano.",
+            "locale": "it",
+            "template": "documented-authored-cce35e34820d1883f493"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Obeso com FA e idade &gt; 60: 6, alta",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Alta probabilità di HFpEF (6 a 9)",
+            "locale": "it",
+            "template": "documented-authored-6b2c86dc39908468d405"
+          },
+          "note": {
+            "text": "HFpEF probabile: trattare e indagare eziologie specifiche (amiloidosi, cardiomiopatia ipertrofica).",
+            "locale": "it",
+            "template": "documented-authored-cdc733254d6604bd2c92"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Nenhum item: 0, baixa",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "احتمال منخفض لقصور القلب مع الكسر القذفي المحفوظ (0 إلى 1)",
+            "locale": "ar",
+            "template": "documented-authored-408933f237e02f8b5c64"
+          },
+          "note": {
+            "text": "استقصِ الأسباب غير القلبية لضيق النفس.",
+            "locale": "ar",
+            "template": "documented-authored-98758c37546bd0a7ddc8"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Idade &gt; 60 e E/e' &gt; 9: 2, intermediária (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "احتمال متوسط (2 إلى 5)",
+            "locale": "ar",
+            "template": "documented-authored-1eeea0f428b964e1d89e"
+          },
+          "note": {
+            "text": "استكمل بإيكو قلب الجهد (الانبساطي) أو القسطرة مع الجهد؛ تساعد الببتيدات المدرّة للصوديوم.",
+            "locale": "ar",
+            "template": "documented-authored-cce35e34820d1883f493"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Obeso, 2 anti-hipertensivos, idade &gt; 60 e E/e' &gt; 9: 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "احتمال متوسط (2 إلى 5)",
+            "locale": "ar",
+            "template": "documented-authored-1eeea0f428b964e1d89e"
+          },
+          "note": {
+            "text": "استكمل بإيكو قلب الجهد (الانبساطي) أو القسطرة مع الجهد؛ تساعد الببتيدات المدرّة للصوديوم.",
+            "locale": "ar",
+            "template": "documented-authored-cce35e34820d1883f493"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Obeso com FA e idade &gt; 60: 6, alta",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "احتمال مرتفع لقصور القلب مع الكسر القذفي المحفوظ (6 إلى 9)",
+            "locale": "ar",
+            "template": "documented-authored-6b2c86dc39908468d405"
+          },
+          "note": {
+            "text": "من المحتمل قصور القلب مع الكسر القذفي المحفوظ: عالج واستقصِ المسببات المحددة (الداء النشواني، اعتلال عضلة القلب الضخامي).",
+            "locale": "ar",
+            "template": "documented-authored-cdc733254d6604bd2c92"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Nenhum item: 0, baixa",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "HFpEF低概率（0至1）",
+            "locale": "zh",
+            "template": "documented-authored-408933f237e02f8b5c64"
+          },
+          "note": {
+            "text": "调查呼吸困难的非心脏原因。",
+            "locale": "zh",
+            "template": "documented-authored-98758c37546bd0a7ddc8"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Idade &gt; 60 e E/e' &gt; 9: 2, intermediária (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中等概率（2至5）",
+            "locale": "zh",
+            "template": "documented-authored-1eeea0f428b964e1d89e"
+          },
+          "note": {
+            "text": "辅以负荷超声心动图（舒张功能）或运动导管检查；利钠肽有帮助。",
+            "locale": "zh",
+            "template": "documented-authored-cce35e34820d1883f493"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Obeso, 2 anti-hipertensivos, idade &gt; 60 e E/e' &gt; 9: 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中等概率（2至5）",
+            "locale": "zh",
+            "template": "documented-authored-1eeea0f428b964e1d89e"
+          },
+          "note": {
+            "text": "辅以负荷超声心动图（舒张功能）或运动导管检查；利钠肽有帮助。",
+            "locale": "zh",
+            "template": "documented-authored-cce35e34820d1883f493"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Obeso com FA e idade &gt; 60: 6, alta",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "HFpEF高概率（6至9）",
+            "locale": "zh",
+            "template": "documented-authored-6b2c86dc39908468d405"
+          },
+          "note": {
+            "text": "HFpEF可能：治疗并调查特定病因（淀粉样变性、肥厚型心肌病）。",
+            "locale": "zh",
+            "template": "documented-authored-cdc733254d6604bd2c92"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Nenhum item: 0, baixa",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "HFpEFの低い確率（0～1）",
+            "locale": "ja",
+            "template": "documented-authored-408933f237e02f8b5c64"
+          },
+          "note": {
+            "text": "呼吸困難の非心臓性原因を調べる。",
+            "locale": "ja",
+            "template": "documented-authored-98758c37546bd0a7ddc8"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Idade &gt; 60 e E/e' &gt; 9: 2, intermediária (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中等確率（2～5）",
+            "locale": "ja",
+            "template": "documented-authored-1eeea0f428b964e1d89e"
+          },
+          "note": {
+            "text": "負荷心エコー（拡張機能）または運動負荷下カテーテル検査で補完する。ナトリウム利尿ペプチドが役立つ。",
+            "locale": "ja",
+            "template": "documented-authored-cce35e34820d1883f493"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Obeso, 2 anti-hipertensivos, idade &gt; 60 e E/e' &gt; 9: 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中等確率（2～5）",
+            "locale": "ja",
+            "template": "documented-authored-1eeea0f428b964e1d89e"
+          },
+          "note": {
+            "text": "負荷心エコー（拡張機能）または運動負荷下カテーテル検査で補完する。ナトリウム利尿ペプチドが役立つ。",
+            "locale": "ja",
+            "template": "documented-authored-cce35e34820d1883f493"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Obeso com FA e idade &gt; 60: 6, alta",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "HFpEFの高い確率（6～9）",
+            "locale": "ja",
+            "template": "documented-authored-6b2c86dc39908468d405"
+          },
+          "note": {
+            "text": "HFpEFが示唆される：治療し、特異的病因（アミロイドーシス、肥大型心筋症）を調べる。",
+            "locale": "ja",
+            "template": "documented-authored-cdc733254d6604bd2c92"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Nenhum item: 0, baixa",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "HFpEF की कम संभावना (0 से 1)",
+            "locale": "hi",
+            "template": "documented-authored-408933f237e02f8b5c64"
+          },
+          "note": {
+            "text": "श्वासकष्ट के गैर-हृदय कारणों की जाँच करें।",
+            "locale": "hi",
+            "template": "documented-authored-98758c37546bd0a7ddc8"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Idade &gt; 60 e E/e' &gt; 9: 2, intermediária (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "मध्यम संभावना (2 से 5)",
+            "locale": "hi",
+            "template": "documented-authored-1eeea0f428b964e1d89e"
+          },
+          "note": {
+            "text": "स्ट्रेस इकोकार्डियोग्राम (डायस्टोलिक) या व्यायाम कैथेटराइजेशन से पूरक करें; नैट्रियूरेटिक पेप्टाइड्स सहायक होते हैं।",
+            "locale": "hi",
+            "template": "documented-authored-cce35e34820d1883f493"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Obeso, 2 anti-hipertensivos, idade &gt; 60 e E/e' &gt; 9: 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "मध्यम संभावना (2 से 5)",
+            "locale": "hi",
+            "template": "documented-authored-1eeea0f428b964e1d89e"
+          },
+          "note": {
+            "text": "स्ट्रेस इकोकार्डियोग्राम (डायस्टोलिक) या व्यायाम कैथेटराइजेशन से पूरक करें; नैट्रियूरेटिक पेप्टाइड्स सहायक होते हैं।",
+            "locale": "hi",
+            "template": "documented-authored-cce35e34820d1883f493"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Obeso com FA e idade &gt; 60: 6, alta",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "HFpEF की उच्च संभावना (6 से 9)",
+            "locale": "hi",
+            "template": "documented-authored-6b2c86dc39908468d405"
+          },
+          "note": {
+            "text": "HFpEF संभावित: उपचार करें और विशिष्ट एटियोलॉजी की जाँच करें (अमाइलॉयडोसिस, हाइपरट्रॉफिक कार्डियोमायोपैथी)।",
+            "locale": "hi",
+            "template": "documented-authored-cdc733254d6604bd2c92"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

@@ -77,3 +77,35 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Baixa probabilidade de ICFEp (0 a 1)
+
+Investigar causas não cardíacas da dispneia.
+
+
+### 2
+
+Probabilidade intermediária (2 a 5)
+
+Complementar com ecocardiograma de esforço (diastólico) ou cateterismo com exercício; peptídeos natriuréticos ajudam.
+
+
+### 3
+
+Probabilidade intermediária (2 a 5)
+
+Complementar com ecocardiograma de esforço (diastólico) ou cateterismo com exercício; peptídeos natriuréticos ajudam.
+
+
+### 4
+
+Alta probabilidade de ICFEp (6 a 9)
+
+ICFEp provável: tratar e investigar etiologias específicas (amiloidose, cardiomiopatia hipertrófica).
+

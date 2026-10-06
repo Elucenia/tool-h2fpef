@@ -265,7 +265,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "H 2 FPEF/Reddy 2018:6 fatores,0–9; 2 IMC/3 FA",
-    "implementationVersion": "h2fpef@native-2026-10-03+4a9c785e22a8",
+    "implementationVersion": "h2fpef@native-2026-10-05+79f930850636",
     "currentMethodSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6202181/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -523,7 +523,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "4a9c785e22a8242daa5713ac87b441ff956644033e93a1818f29524ef3d69a91"
+      "implementationHash": "79f93085063602d2f644db8c49bbff46e37d3823d19331a3eee4fcc1ee56e860",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "h2fpef@native-2026-10-03+4a9c785e22a8",
+          "previousImplementationHash": "4a9c785e22a8242daa5713ac87b441ff956644033e93a1818f29524ef3d69a91",
+          "implementationHash": "79f93085063602d2f644db8c49bbff46e37d3823d19331a3eee4fcc1ee56e860",
+          "scientificBodySha256": "e85276683115c11c8a08c490b617391606f7137a1aaae50779ecc2e6796ea25d",
+          "metadataContractHash": "a8598fba79e92cbac3528a2c4f955239035d0a7b81a373e1b33b99d92fe6704e",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "O H2FPEF foi desenvolvido em pessoas com dispneia inexplicada encaminhadas para avaliação hemodinâmica invasiva de esforço, comparando ICFEp e causas não cardíacas. O escore auxilia a decidir investigação adicional; não confirma sozinho ICFEp nem deve ser extrapolado automaticamente a toda causa de dispneia. População, fração de ejeção e definições ecocardiográficas precisam corresponder ao método.",
     "sourceLimitEvidence": {
@@ -542,20 +570,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/h2fpef/calculator.js",
-    "bytes": 5109,
-    "sha256": "4a9c785e22a8242daa5713ac87b441ff956644033e93a1818f29524ef3d69a91"
+    "bytes": 5314,
+    "sha256": "79f93085063602d2f644db8c49bbff46e37d3823d19331a3eee4fcc1ee56e860"
   },
-  "sourceToolSha256": "5baf0b0f948c5564545b9ace2aa2357c402db178289f2e43303d358c8219daa9",
+  "sourceToolSha256": "9e096dca19a0bd1464f2160a4b21fef79258bb1aa94ae036989286ac52764103",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "29e9406d9648c87b95d7ec987639b35b252f884a412165581c5e8acfb5ee09d9",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "29e9406d9648c87b95d7ec987639b35b252f884a412165581c5e8acfb5ee09d9",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

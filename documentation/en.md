@@ -77,3 +77,35 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Low probability of HFpEF (0 to 1)
+
+Investigate non-cardiac causes of dyspnea.
+
+
+### 2
+
+Intermediate probability (2 to 5)
+
+Complement with stress echocardiography (diastolic) or exercise catheterization; natriuretic peptides help.
+
+
+### 3
+
+Intermediate probability (2 to 5)
+
+Complement with stress echocardiography (diastolic) or exercise catheterization; natriuretic peptides help.
+
+
+### 4
+
+High probability of HFpEF (6 to 9)
+
+HFpEF likely: treat and investigate specific etiologies (amyloidosis, hypertrophic cardiomyopathy).
+

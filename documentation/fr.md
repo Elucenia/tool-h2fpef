@@ -77,3 +77,35 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Faible probabilité d'ICFEp (0 à 1)
+
+Rechercher des causes non cardiaques de la dyspnée.
+
+
+### 2
+
+Probabilité intermédiaire (2 à 5)
+
+Compléter par une échocardiographie d'effort (diastolique) ou un cathétérisme à l'exercice ; les peptides natriurétiques aident.
+
+
+### 3
+
+Probabilité intermédiaire (2 à 5)
+
+Compléter par une échocardiographie d'effort (diastolique) ou un cathétérisme à l'exercice ; les peptides natriurétiques aident.
+
+
+### 4
+
+Forte probabilité d'ICFEp (6 à 9)
+
+ICFEp probable : traiter et rechercher des étiologies spécifiques (amylose, cardiomyopathie hypertrophique).
+

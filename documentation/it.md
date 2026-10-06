@@ -77,3 +77,35 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Bassa probabilità di HFpEF (0 a 1)
+
+Indagare cause non cardiache della dispnea.
+
+
+### 2
+
+Probabilità intermedia (2 a 5)
+
+Completare con ecocardiogramma da sforzo (diastolico) o cateterismo con esercizio; i peptidi natriuretici aiutano.
+
+
+### 3
+
+Probabilità intermedia (2 a 5)
+
+Completare con ecocardiogramma da sforzo (diastolico) o cateterismo con esercizio; i peptidi natriuretici aiutano.
+
+
+### 4
+
+Alta probabilità di HFpEF (6 a 9)
+
+HFpEF probabile: trattare e indagare eziologie specifiche (amiloidosi, cardiomiopatia ipertrofica).
+

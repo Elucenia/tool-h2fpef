@@ -1,0 +1,232 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "h2fpef",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "e2cc002e4d60980f629fdc7e1f055722f2d9f3b4",
+    "oldEngineSha256": "4a9c785e22a8242daa5713ac87b441ff956644033e93a1818f29524ef3d69a91",
+    "currentEngineSha256": "79f93085063602d2f644db8c49bbff46e37d3823d19331a3eee4fcc1ee56e860"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Nenhum item: 0, baixa",
+      "input": {
+        "obesidade": false,
+        "anti": false,
+        "fa": false,
+        "hp": false,
+        "idade": false,
+        "ee": false
+      },
+      "publicOutput": {
+        "id": "h2fpef",
+        "main": [
+          "0",
+          "de 9"
+        ],
+        "label": "H₂FPEF",
+        "raw": {
+          "score": 0
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 0,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "0",
+          "de 9"
+        ],
+        "label": "H₂FPEF",
+        "level": "low",
+        "verdict": "Baixa probabilidade de ICFEp (0 a 1)",
+        "note": "Investigar causas não cardíacas da dispneia.",
+        "raw": {
+          "score": 0
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Idade &gt; 60 e E/e' &gt; 9: 2, intermediária (limite)",
+      "input": {
+        "idade": true,
+        "ee": true,
+        "obesidade": false,
+        "anti": false,
+        "fa": false,
+        "hp": false
+      },
+      "publicOutput": {
+        "id": "h2fpef",
+        "main": [
+          "2",
+          "de 9"
+        ],
+        "label": "H₂FPEF",
+        "raw": {
+          "score": 2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 2,
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "2",
+          "de 9"
+        ],
+        "label": "H₂FPEF",
+        "level": "mid",
+        "verdict": "Probabilidade intermediária (2 a 5)",
+        "note": "Complementar com ecocardiograma de esforço (diastólico) ou cateterismo com exercício; peptídeos natriuréticos ajudam.",
+        "raw": {
+          "score": 2
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Obeso, 2 anti-hipertensivos, idade &gt; 60 e E/e' &gt; 9: 5",
+      "input": {
+        "obesidade": true,
+        "anti": true,
+        "idade": true,
+        "ee": true,
+        "fa": false,
+        "hp": false
+      },
+      "publicOutput": {
+        "id": "h2fpef",
+        "main": [
+          "5",
+          "de 9"
+        ],
+        "label": "H₂FPEF",
+        "raw": {
+          "score": 5
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 5,
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "5",
+          "de 9"
+        ],
+        "label": "H₂FPEF",
+        "level": "mid",
+        "verdict": "Probabilidade intermediária (2 a 5)",
+        "note": "Complementar com ecocardiograma de esforço (diastólico) ou cateterismo com exercício; peptídeos natriuréticos ajudam.",
+        "raw": {
+          "score": 5
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Obeso com FA e idade &gt; 60: 6, alta",
+      "input": {
+        "obesidade": true,
+        "fa": true,
+        "idade": true,
+        "anti": false,
+        "hp": false,
+        "ee": false
+      },
+      "publicOutput": {
+        "id": "h2fpef",
+        "main": [
+          "6",
+          "de 9"
+        ],
+        "label": "H₂FPEF",
+        "raw": {
+          "score": 6
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 6,
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "6",
+          "de 9"
+        ],
+        "label": "H₂FPEF",
+        "level": "high",
+        "verdict": "Alta probabilidade de ICFEp (6 a 9)",
+        "note": "ICFEp provável: tratar e investigar etiologias específicas (amiloidose, cardiomiopatia hipertrófica).",
+        "raw": {
+          "score": 6
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    }
+  ]
+}
